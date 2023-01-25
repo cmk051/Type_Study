@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // js 를 허용한다는 뜻
+    "checkJs": true, // @ts-check 와 같은 뜻
+    "noImplicitAny": true // 모든타입에 대해서 정의를 안 했을 경우 any라는 타입을 넣어야한다는 의미
+  }
+}

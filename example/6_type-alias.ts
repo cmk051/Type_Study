@@ -1,5 +1,7 @@
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html
 // https://www.typescriptlang.org/docs/handbook/advanced-types.html#nullable-types
+// type 은 확장이 불가능하고 interface 는 확장이 가능하다.
+
 
 // #1
 // function sum(a: number, b:number) {
@@ -12,12 +14,12 @@ function sum(a: SumParameter, b: SumParameter) {
 }
 
 // #2
-type Person = {
+type Person2 = {
   name: string;
   age: number;
 };
 
-function getPerson(): Person {
+function getPerson(): void {
   // ...
 }
 
@@ -27,5 +29,5 @@ type Hero = {
 }
 
 const capt: Hero = { 
-  // skill: 'throwing a shield' 
+  skill: 'throwing a shield' 
 }
