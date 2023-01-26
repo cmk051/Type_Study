@@ -6,12 +6,23 @@ function getArray(value: string[]) {
   return value;
 }
 
-// 제네릭 기본 문법 - 함수
+// 제네릭 기본 문법 - 함수 <T> 라는 타입을 받겠다. value: T는 T라는 타입으로 사용하겠다. 리턴 T는 리턴으로 t라는 타입으로 리턴하겠다
 function getValue<T>(value: T): T {
   return value;
 }
+// 제네릭이란 호출할때 리턴값 및 인자값이 정해진다.
+
 getValue('hi').toLocaleUpperCase();
 getValue(100).toLocaleString();
+
+function logText(text:string | number) {
+  console.log(text)
+  // string 이나 number 타입으로 매개변수를 받아도 타입이 확고하지 않으면 split 함수를 사용 못한다.
+  text.split()
+  return text;
+}
+
+
 
 // 제네릭 기본 문법 - 인터페이스
 interface Developer<T> {
